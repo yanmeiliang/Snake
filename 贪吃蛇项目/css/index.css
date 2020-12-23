@@ -1,0 +1,101 @@
+/*初始化*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.jpg") repeat;
+}
+/*题目*/
+#timu{
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    font-size:50px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: -1px 3px #b3d4fc;
+    text-align: center;
+}
+/*开始按钮位置*/
+.box{
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid #ccc;
+    position: relative;
+}
+#shw{
+    display: block;
+
+    position: relative;
+    left:50%;
+    top:50%;
+    transform: translate(-100px,-75px);
+}
+#shw>img{
+    width: 200px;
+    height: 150px;
+
+
+}
+/*蛇*/
+.snake{
+    display: none;
+}
+.snake>div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.snake_body,.snake_head{
+    position: absolute;
+    background: yellow;
+}
+.snake_head{
+    background: red;
+    left: 500px;
+    top:180px;
+}
+.snake_body{
+    top:180px;
+}
+.snake_body1{
+     left:520px;
+ }
+.snake_body2{
+    left:540px;
+}
+.snake_body3{
+    left:560px;
+}
+/*创建的蛇身*/
+.creatbody{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+  background:yellow;
+}
+/*食物*/
+.food{
+    width: 20px;
+    height: 20px;
+    background: pink;
+    border-radius: 50%;
+    position: absolute;
+}
+/*蛇10px一格*/
+/*分数*/
+#score{
+    display: none;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+  bottom: 50px;
+    right: 100px;
+  font-weight: bold;
+    font-size: 20px;
+}
